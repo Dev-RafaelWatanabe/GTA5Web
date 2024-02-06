@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="/src/css/fonte.css">
     <link rel="stylesheet" href="/src/css/responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
 
@@ -25,20 +26,29 @@
 
     <!--área de navegação do header-->
         <nav class="navegacao">
+
+            <!--área de navegação mobile-->
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <!--menu de navegação web-->
             <ul class="menu">
-                <li>
+                <li class="navlinks">
                     <a  href="#inicio">Início</a>
                 </li>
-                <li>
+                <li class="navlinks">
                     <a href="#comprar">Comprar</a>
                 </li>
-                <li>
+                <li class="navlinks">
     <!--a função target="_blank" serve para que ao clicar nesse link, abra uma nova aba no navegador do usuário-->
                     <a href="https://support.rockstargames.com/categories/200013306" target="_blank">Suporte <img src="/src/Img/icone-link.svg" alt="link para página de suporte"></a>
                 </li>
             </ul>
         </nav>
-    <!-------------------------------->       
+    <!-------------------------------->
     </header>
 
 <!--Parte principal da página que fica logo abaixo do cabeçalho--> 
@@ -115,5 +125,6 @@
 
     </section>
 
+    <script src="./src/js/mobile-menu.js"></script>
 </body>
 </html>
