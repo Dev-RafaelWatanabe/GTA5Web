@@ -1,4 +1,6 @@
-@media (max-width: 1024px){
+@media (max-width: 1032px){
+
+/*área de estilização do ícone hamburguer para dispositivos abaixo de 1032px*/
     body {
         overflow-x:hidden ;
     }
@@ -53,4 +55,76 @@
       .mobile-menu.active .line3 {
         transform: rotate(45deg) translate(-5px, -7px);
       }
+
+/*estilização da parte principal, que fica abaixo do cabeçalho da página, (alteração do tamanho da fonte, padding, etc)*/ 
+    .inicio .informacao {
+        padding: 30px;
+    }
+
+    .inicio .informacao img {
+        max-width: 100px;
+    }
+
+    .inicio .informacao .tituloMain {
+        font-size: 40px;
+    }
+
+    .inicio .informacao .miniTexto {
+        font-size: 15px;
+    }
+
+/*estilização da área de compra, o <section/> */
+    .comprar .card {
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        overflow-x:hidden ;
+    }
+
+/*estilização da section*/
+    .comprar {
+        padding: 30px;
+    }
+
+    .comprar .card {
+        padding: 80px 20px;
+        width: 100%;
+    }
+
+    .comprar .info-da-compra h3{
+        font-size: 35px;
+    }
+
+    .comprar .info-da-compra .plataformas {
+        flex-direction: column;
+    }
+
+    .comprar .select-plataform {
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+/*estilização do botão da main*/
+    .inicio .informacao .botaoComprar{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 425px) {
+    body {
+        overflow-x:hidden ;
+    }
+
+    main::after {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4) 100%, transparent 65%);
+    }
+
+    .comprar .card .capa-gta {
+        max-width: 80%;
+    }
 }
